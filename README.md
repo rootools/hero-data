@@ -21,3 +21,15 @@ Set _format_ to define return view(e.g. "DD.MM.YYYY hh:mm:ss"). Used Variables: 
 var nowTime = hd.time.now('numeric', 'DD.MM.YYYY hh:mm:ss');
 console.log(nowTime); // Show: "22.05.2012 13:50:39"
 ```
+
+### .uptime(_miliseconds_)
+* _miliseconds_ Integer
+
+Get miliseconds and return time between 0 and _miliseconds_.
+
+**Example**
+```
+var uptime = hd.time.uptime(783409120); // return object "{ seconds: 49, minutes: 36, hours: 1, days: 9, month: 0, years: 0 }"
+// Use process.uptime();
+var nuptime = hd.time.uptime(Math.floor(process.uptime() * 1000));
+```

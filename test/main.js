@@ -10,4 +10,12 @@ describe('heroData.time.now(\'DD.MM.YYYY hh:mm:ss\', \'numeric\')', function() {
 	});
 });
 
+describe('heroData.time.uptime(\'783409120\')', function() {
+    it('', function() {
+      var result = heroData.time.uptime(783409120);
+      result.should.be.a('object').and.have.property('seconds', 49);
+    });
+});
+
+
 // Array Modules here

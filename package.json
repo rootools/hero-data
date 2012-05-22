@@ -1,8 +1,8 @@
 {
-  "author": "rootools <baboonweb@gmail.com>",
+  "author": "Anton Bravin <baboonweb@gmail.com>",
   "name": "hero-data",
-  "description": "�Multifunctional Data Manipulation Lib",
-  "version": "0.0.0",
+  "description": "Multifunctional Data Manipulation Lib",
+  "version": "0.0.1",
   "main": "lib/main.js",
   "dependencies": {},
   "devDependencies": {},

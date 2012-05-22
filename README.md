@@ -32,7 +32,7 @@ Get miliseconds and return time between 0 and _miliseconds_.
 
 **Example**
 ```
-var uptime = hd.time.uptime(783409120); // return object "{ seconds: 49, minutes: 36, hours: 1, days: 9, month: 0, years: 0 }"
+var uptime = hd.time.uptime(783409120); // return object "{ seconds: 49, minutes: 36, hours: 1, days: 9, months: 0, years: 0 }"
 // Use process.uptime();
 var nuptime = hd.time.uptime(Math.floor(process.uptime() * 1000));
 ```

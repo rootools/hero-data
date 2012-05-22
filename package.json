@@ -1,5 +1,5 @@
 {
-  "author": "Anton Bravin <baboonweb@gmail.com>",
+  "author": "Anton Bravin <baboonweb@gmail.com> (http://rootools.github.com/hero-data/)",
   "name": "hero-data",
   "description": "Multifunctional Data Manipulation Lib",
   "version": "0.0.2",
@@ -12,5 +12,9 @@
   },
 	"scripts": {
 		"test":"mocha test/*.js"
-	}
+	},
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/rootools/hero-data.git"
+  }
 }

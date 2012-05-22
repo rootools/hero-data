@@ -13,7 +13,11 @@ describe('heroData.time.now(\'DD.MM.YYYY hh:mm:ss\', \'numeric\')', function() {
 describe('heroData.time.uptime(\'783409120\')', function() {
     it('', function() {
       var result = heroData.time.uptime(783409120);
-      result.should.be.a('object').and.have.property('seconds', 49);
+      result.should.be.a('object').and.have.property('days', '09');
+    });
+    it('args: withOutNull', function() {
+      var result = heroData.time.uptime(783409120, 'withOutNull');
+      result.should.be.a('object').and.have.property('days', 9);
     });
 });
 

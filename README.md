@@ -11,9 +11,9 @@ console.log(nowTime); // Show: "22.05.2012 13:50:39"
 ```
 
 ## Time Module
-### .now(_format_,_type_)
-* _type_ String
+### .now(_format_, _type_)
 * _format_ String
+* _type_ String(optional)
 
 Get current date and return formated string.
 
@@ -25,14 +25,20 @@ var nowTime = hd.time.now('numeric', 'DD.MM.YYYY hh:mm:ss');
 console.log(nowTime); // Show: "22.05.2012 13:50:39"
 ```
 
-### .uptime(_miliseconds_)
+### .uptime(_miliseconds_, _type_)
 * _miliseconds_ Integer
+* _type_ String(optional)
 
 Get miliseconds and return time between 0 and _miliseconds_.
 
+Type varios: _withOutNull_(integer output). Default: _undefined_(string output).
+
 **Example**
 ```
-var uptime = hd.time.uptime(783409120); // return object "{ seconds: 49, minutes: 36, hours: 1, days: 9, months: 0, years: 0 }"
+var uptime = hd.time.uptime(783409120, 'withOutNull'); // return object "{ seconds: 49, minutes: 36, hours: 1, days: 9, months: 0, years: 0 }"
+
+var stringUptime = hd.time.uptime(783409120); // return object "{ seconds: '49', minutes: '36', hours: '01', days: '09', months: '00', years: '00' }"
+
 // Use process.uptime();
 var nuptime = hd.time.uptime(Math.floor(process.uptime() * 1000));
 ```

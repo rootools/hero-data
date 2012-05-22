@@ -3,9 +3,9 @@ var heroData = require('../lib/main');
 
 
 // Time Modules here
-describe('heroData.time.now(\'numeric\', \'DD.MM.YYYY hh:mm:ss\')', function() {
+describe('heroData.time.now(\'DD.MM.YYYY hh:mm:ss\', \'numeric\')', function() {
 	it('', function() {
-		var result = heroData.time.now('numeric', 'DD.MM.YYYY hh:mm:ss');
+		var result = heroData.time.now('DD.MM.YYYY hh:mm:ss', 'numeric');
 		result.should.be.a('string').with.lengthOf(19);
 	});
 });

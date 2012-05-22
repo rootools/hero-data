@@ -1,4 +1,7 @@
 # Install
+```
+npm install hero-data
+```
 # Usage
 ```
 var hd = require('hero-data');

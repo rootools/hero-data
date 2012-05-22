@@ -2,7 +2,7 @@
   "author": "Anton Bravin <baboonweb@gmail.com>",
   "name": "hero-data",
   "description": "Multifunctional Data Manipulation Lib",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "main": "lib/main.js",
   "dependencies": {},
   "devDependencies": {"mocha":"", "should":""},

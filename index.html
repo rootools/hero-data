@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+
+    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="stylesheets/pygment_trac.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="stylesheets/print.css" media="print" />
+
+    <title>Hero Data by rootools</title>
+  </head>
+
+  <body>
+
+    <header>
+      <div class="container">
+        <h1>Hero Data</h1>
+        <h2>Multifunctional Data Manipulation Lib</h2>
+
+        <section id="downloads">
+          <a href="https://github.com/rootools/hero-data/zipball/master" class="btn">Download as .zip</a>
+          <a href="https://github.com/rootools/hero-data/tarball/master" class="btn">Download as .tar.gz</a>
+          <a href="https://github.com/rootools/hero-data" class="btn btn-github"><span class="icon"></span>View on GitHub</a>
+        </section>
+      </div>
+    </header>
+
+    <div class="container">
+      <section id="main_content">
+        <h1>Install</h1>
+
+<pre><code>npm install hero-data
+</code></pre>
+
+<h1>Usage</h1>
+
+<pre><code>var hd = require('hero-data');
+
+var nowTime = hd.time.now('DD.MM.YYYY hh:mm:ss', 'numeric');
+console.log(nowTime); // Show: "22.05.2012 13:50:39"
+</code></pre>
+
+<h2>Time Module</h2>
+
+<h3>.now(<em>format</em>, <em>type</em>)</h3>
+
+<ul>
+<li>
+<em>format</em> String</li>
+<li>
+<em>type</em> String(optional)</li>
+</ul><p>Get current date and return formated string.</p>
+
+<p>Set <em>format</em> to define return view(e.g. "DD.MM.YYYY hh:mm:ss"). Used Variables: DD - day(2 digits), MM - month(2 digits), YYYY - year(4 digits), hh - hour(2 digits), mm - minute(2 digits), ss - seconds(2 digits). Set <em>type</em> to define numerical or words form(<em>numeric</em>).</p>
+
+<p><strong>Example</strong></p>
+
+<pre><code>var nowTime = hd.time.now('DD.MM.YYYY hh:mm:ss', 'numeric');
+console.log(nowTime); // Show: "22.05.2012 13:50:39"
+</code></pre>
+
+<h3>.uptime(<em>miliseconds</em>, <em>type</em>)</h3>
+
+<ul>
+<li>
+<em>miliseconds</em> Integer</li>
+<li>
+<em>type</em> String(optional)</li>
+</ul><p>Get miliseconds and return time between 0 and <em>miliseconds</em>.</p>
+
+<p>Type varios: <em>withOutNull</em>(integer output). Default: <em>undefined</em>(string output).</p>
+
+<p><strong>Example</strong></p>
+
+<pre><code>var uptime = hd.time.uptime(783409120, 'withOutNull'); // return object "{ seconds: 49, minutes: 36, hours: 1, days: 9, months: 0, years: 0 }"
+
+var stringUptime = hd.time.uptime(783409120); // return object "{ seconds: '49', minutes: '36', hours: '01', days: '09', months: '00', years: '00' }"
+
+// Use process.uptime();
+var nuptime = hd.time.uptime(Math.floor(process.uptime() * 1000));
+</code></pre>
+      </section>
+    </div>
+
+              <script type="text/javascript">
+            var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+            document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+          </script>
+          <script type="text/javascript">
+            try {
+              var pageTracker = _gat._getTracker("UA-31969457-1");
+            pageTracker._trackPageview();
+            } catch(err) {}
+          </script>
+
+  </body>
+</html>

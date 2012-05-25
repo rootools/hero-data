@@ -6,7 +6,7 @@ npm install hero-data
 ```
 var hd = require('hero-data');
 
-var nowTime = hd.time.now('numeric', 'DD.MM.YYYY hh:mm:ss');
+var nowTime = hd.time.now('DD.MM.YYYY hh:mm:ss', 'numeric');
 console.log(nowTime); // Show: "22.05.2012 13:50:39"
 ```
 
@@ -21,7 +21,7 @@ Set _format_ to define return view(e.g. "DD.MM.YYYY hh:mm:ss"). Used Variables: 
 
 **Example**
 ```
-var nowTime = hd.time.now('numeric', 'DD.MM.YYYY hh:mm:ss');
+var nowTime = hd.time.now('DD.MM.YYYY hh:mm:ss', 'numeric');
 console.log(nowTime); // Show: "22.05.2012 13:50:39"
 ```
 

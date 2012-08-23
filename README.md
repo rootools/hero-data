@@ -1,3 +1,4 @@
+[![build status](https://secure.travis-ci.org/rootools/hero-data.png)](http://travis-ci.org/rootools/hero-data)
 # Install
 ```
 npm install hero-data

@@ -43,3 +43,15 @@ var stringUptime = hd.time.uptime(783409120); // return object "{ seconds: '49',
 // Use process.uptime();
 var nuptime = hd.time.uptime(Math.floor(process.uptime() * 1000));
 ```
+
+## Misc Module
+### .randomString(_length_)
+* _length_ Integer(Optional)
+
+Generates a random string of numbers and uppercase and lowercase letters. Default _length_ is 8.
+
+**Example**
+```
+var rand = hd.misc.randomString();
+console.log(rand);  //  Example Show: "zr24pqg7"
+```

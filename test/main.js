@@ -22,4 +22,14 @@ describe('heroData.time.uptime(\'783409120\')', function() {
 });
 
 
-// Array Modules here
+// Misc Modules here
+describe('heroData.misc.randomString()', function() {
+  it('', function() {
+    var result = heroData.misc.randomString();
+    result.should.be.a('string').with.lengthOf(8);
+  });
+  it('args: 12', function() {
+    var result = heroData.misc.randomString(12);
+    result.should.be.a('string').with.lengthOf(12);
+  });
+});
